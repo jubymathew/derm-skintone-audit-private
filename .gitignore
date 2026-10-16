@@ -1,0 +1,43 @@
+# Data - never commit source images or patient-identifiable material
+data/
+!data/.gitkeep
+*.jpg
+*.jpeg
+*.png
+!docs/**/*.png
+*.tif
+*.dcm
+
+# Build artefacts
+outputs/
+runs/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.parquet
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Secrets - never commit tokens
+.env
+*.key
+credentials.json
